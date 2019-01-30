@@ -63,8 +63,23 @@ protected function straightBetsProvider()
 + RouletteApiCest: Test straight bets | 1 (0.61s)
 ```
 
+## Instalacja & uruchomienie
+
+Aby zainstalować, musimy skorzystać z composer (https://getcomposer.org/doc/00-intro.md)
+(upewnij się że uruchamiasz komendy w folderze z projektem, to jest dziwny protip ale działa)
+```
+composer install
+```
+
 Aby uruchomić testy wystarczy wpisać komendę:
+
+#### Windows
 ```
-.\vendor\bin\codecept[.bat] run --env dev
+.\vendor\bin\codecept.bat run --env dev
 ```
-Konfiruracja środowiska, tj. adres API, znajdują się w podkatalogu `_envs`.
+
+#### Linux/Macos 
+```
+vendor/bin/codecept run --env dev
+```
+Konfiruracja środowiska, tj. adres API, znajdują się w podkatalogu `tests/_envs` (ale chyba nie bedziesz potrzebował zmieniać na czas coding dojo).
