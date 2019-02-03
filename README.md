@@ -7,6 +7,18 @@ Twoim zadaniem jest ich odnalezienie! Twoim orężem w tych poszukiwaniach są a
 Stworzony kod wyglądem przypomina spaghetti stąd testowane API traktujemy jako czarną skrzynkę. 
 Do Twojej dyspozycji udostępniamy zasady gry w ruletkę oraz dokumentację, na podstawie której stworzono ruletkowe API.
 
+## Znalezione nieprawidłowości
+
+1. Zamienione kolory "11" z "12"
+2. Brak cornera "31-32-34-35"
+3. "19" nie nalezy do zbioru liczb wysokich
+4. Brak zakładów /line/
+5. Zakłady /split/ mają mnożnik 1:11 zamiast 1:17
+6. Brak zakładu /straight/4
+7. Można postawić więcej niż się posiada
+8. "0" wygrywa zakład na parzyste
+9. Można obstawiać nie całkowitą liczbę chipsów "50.70", API zaokrągla w dół
+
 ## Codeception
 
 Do stworzenia automatycznych testów polecamy **Codeception**, które posiada wbudowany moduł do weryfikacji REST-owych API.
